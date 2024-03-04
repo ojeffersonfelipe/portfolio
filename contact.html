@@ -44,7 +44,7 @@
         </section>
         <section class="is-white">
             <div class="container">
-                <form accept-charset="UTF-8" action="https://usebasin.com/f/363b98eca5af" method="POST">
+                <form accept-charset="UTF-8" action="https://usebasin.com/f/ad19ed2acb66" method="POST">
                     <div class="columns is-centered">
                         <div class="column is-half">
                             <div class="field">
@@ -94,7 +94,18 @@
         </section>
     </div>
     <script src="./js/main-min.js"></script>
-    <script src="https://usebasin.com/f/363b98eca5af/ahoy.js" async="" defer=""></script>
+    <script type="text/javascript">
+function configureAhoy() {
+    ahoy.configure({
+    visitsUrl: "https://usebasin.com/ahoy/visits",
+    eventsUrl: "https://usebasin.com/ahoy/events",
+    page: "ad19ed2acb66" /* Use your form id here */
+    });
+    ahoy.trackView();
+    ahoy.trackSubmits();
+    }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/ahoy.js@0.3.9/dist/ahoy.min.js" async defer onload="configureAhoy()">
 </body>
 
 </html>
